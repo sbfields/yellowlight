@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main(void)
+{
+float vsmph;
+printf(“Speed limit of road of violation in miles per hour: \n”);
+scanf(“%f”, &vsmph );
+float vs = 1.4667*vsmph;
+
+float Yv = 1 + vs/(20);
+
+printf(“The yellow light interval is %f seconds.\n”, Yv);
+}
